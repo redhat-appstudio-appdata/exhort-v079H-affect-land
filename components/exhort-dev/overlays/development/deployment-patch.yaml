@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: exhort-dev
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhn-support-rromerom-tenant/exhort/exhort-dev@sha256:8a086be8b0292c6e89f5830fecdcc81d001d64613969d7fffa7cce08804d89b2
+        name: my-java-quarkus
+        resources: {}
+status: {}
